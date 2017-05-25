@@ -7,8 +7,8 @@
     <title>Rango</title>
 </head>
 <body>
-<hb1>{{ category_name }}</hb1>
 {% if category %}
+    <hb1>{{ category_name }}</hb1>
     {% if pages %}
         <ul>
             {% for page in pages %}
@@ -18,8 +18,12 @@
     {% else %}
         <strong>No pages current in category.</strong>
     {% endif %}
-
+    <a href=add_page/>Add Page</a>
+{% else %}
+    {{ error }}
+    <br>
 {% endif %}
+<a href=/rango>Index</a>
 
 
 </body>
