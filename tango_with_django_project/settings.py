@@ -11,6 +11,8 @@ STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
 
 DATABASE_PATH = os.path.join(PROJECT_PATH, 'rango.db')
 
+LOGIN_URL = '/rango/login/'
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
